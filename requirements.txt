@@ -1,0 +1,10 @@
+black==24.2.0
+lightgbm==4.3.0
+numpy==1.26.4
+pandas==2.2.1
+pytest==8.0.2
+python_box==7.1.1
+PyYAML==6.0.1
+scikit_learn==1.4.1.post1
+ucimlrepo==0.0.3
+xgboost==2.0.3

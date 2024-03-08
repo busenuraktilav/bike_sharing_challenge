@@ -6,7 +6,7 @@ repos:
         entry: black
         language: system
         files: \.py$
-        always_run: true
+        always_run: false
         stages: [commit]  
 
   - repo: local

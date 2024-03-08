@@ -4,10 +4,6 @@ from box import Box
 
 from src.data_processing import one_hot_encoding, standard_scaler, Processesor
 
-# test to see if pre-commit
-# works
-
-#
 cfg_mock = Box(
     {
         "data": {

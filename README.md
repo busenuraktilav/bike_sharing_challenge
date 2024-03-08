@@ -24,6 +24,11 @@ pip install -r requirements.txt
 
 Change the cfg.yaml file as you like to make experiments and try the code with different models and preprocessing steps. The default cfg.yaml runs the random forest algorithm and uses mean absolute error as a metric. The code outputs the selected metric
 
+Run the code by
+
+```bash
+python -m src.main
+```
 
 ### Prerequisites
 

@@ -2,7 +2,7 @@ paths:
   root: '/c/Users/busen/Blue-Yonder/bike_sharing_challenge'
 
 model:
-  model_type: 'RandomForestRegressor' # ['LinearRegressor', 'RandomForestRegressor', 'XGBoostRegressor', 'LGBMRegressor']
+  model_type: 'random_forest' # ['linear_regression', 'gradient_boosting', 'decision_tree', 'random_forest', 'mlp_regressor', 'xgboost', 'lightgbm']
   model_params:
     random_state: 42
     n_estimators: 100
@@ -17,8 +17,18 @@ training:
   test_size: 0.2
 
 evaluation:
-  metric: "MAE" # ["MAE", "RMSE"]
+  metric: "mae" # ["mae", "mse", "rmse"]
 
 logging:
   level: "INFO"
   file: "logs/training.log"
+
+data:
+  categorical_features:
+    one_hot_encoding: [] # ['weathersit', 'season']
+  numerical_features:
+    standard_scaler: [] # ['temp', 'atemp', 'hum', 'windspeed']
+    sine_cosine_transformation: [] # ['hr', 'mnth', 'weekday']
+  pca_transformation:
+    n_components: 0
+  target_column: 'cnt'
